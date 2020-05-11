@@ -43,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
         this.checkAppsForIntent(alarmIntent);
     }
 
+    /*
+    * FUNCTION PARA VERIFICAR OS APLICATIVOS QUE PODEM RODAR ESSE INTENT
+    * */
     private void checkAppsForIntent(Intent intent) {
         if(intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);

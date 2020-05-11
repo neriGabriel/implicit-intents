@@ -26,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
     * */
     public void accessWebSite(View view) {
         String url = edtWebAddress.getText().toString();
+        /*
+        * TRANSFORMAR A URL DIGITADA EM URI
+        * */
         Uri uri = Uri.parse(url);
 
         Intent webIntent = new Intent(Intent.ACTION_VIEW, uri);
